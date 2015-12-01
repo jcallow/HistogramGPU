@@ -95,7 +95,7 @@ void GPU_histogramRGB_atomic (int *in_red, int *in_blue, int *in_green, int N, i
 
 
 int main (int argc, char **argv) {
-	Bitmap* bmp = new Bitmap("CAT2.bmp");
+	Bitmap* bmp = new Bitmap(argv[1]);
 
 	int *d_in_red, *d_in_blue, *d_in_green;
 	int *h_in_red, *h_in_blue, *h_in_green;
